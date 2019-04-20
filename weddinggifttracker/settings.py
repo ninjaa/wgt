@@ -124,6 +124,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# Override production variables if DJANGO_DEVELOPMENT env variable is set
+
+# DRF
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 100
+}
+
+# Override production variables if DJANGO_PRODUCTION env variable is set
 # if os.environ.get('DJANGO_DEVELOPMENT') is not None:
 #     from settings_dev import *
+# if os.environ.get('DJANGO_PRODUCTION') is not None:
+#     from settings_prod import *
