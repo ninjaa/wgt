@@ -2,3 +2,4 @@
 .vscode
 venv
 *.sqlite3
+settings_*.py
