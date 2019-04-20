@@ -1,0 +1,3 @@
+[submodule "weddinggifttracker/frontend"]
+	path = weddinggifttracker/frontend
+	url = https://github.com/ninjaa/wgt-frontend
